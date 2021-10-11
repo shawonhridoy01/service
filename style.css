@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 3%;
+}
+.container h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-top: 6%;
+    margin-bottom: 50px;
+    position: relative;
+    font-weight: bold;
+}
+.container h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: rgb(30, 56, 202);
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    transform: translatex(-50%);
+}
+
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:30px ;
+}
+.service{
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(5, 4, 4);
+
+}
+.row i{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(35, 38, 221);
+}
+.row h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+.service:hover {
+    background-color: rgb(16, 74, 235);
+    color: aliceblue;
+}
+.service:hover i {
+
+    color: aliceblue;
+}
